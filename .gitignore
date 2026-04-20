@@ -8,3 +8,5 @@ venv/
 /chroma_db/
 
 *.pdf
+
+.env

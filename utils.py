@@ -65,15 +65,15 @@ from typing import Iterable
 #     return client, generate
 
 # Grok swap (uncomment if you prefer Grok) -------------------------
-def get_llm_client():
+def get_llm_client_grok():
     from openai import OpenAI   # Grok uses the OpenAI SDK
     client = OpenAI(
-        api_key=os.environ.get("XAI_API_KEY"),
-        base_url="https://api.x.ai/v1",
+        api_key=os.environ.get("GROQ_API_KEY"),
+        base_url="https://api.groq.com/openai/v1",
     )
 
     def generate(system: str, user: str,
-                 model: str = "grok-4",
+                 model: str = "llama-3.1-8b-instant",
                  max_tokens: int = 1024) -> str:
         resp = client.chat.completions.create(
             model=model,

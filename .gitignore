@@ -1,0 +1,10 @@
+day0_setup.ipynb
+/__pycache__/
+.ipynb_checkpoints/
+venv/
+__pycache__/
+.ipynb_checkpoints/
+venv/
+/chroma_db/
+
+*.pdf

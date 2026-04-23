@@ -20,3 +20,5 @@ python-dotenv
 tiktoken 
 numpy 
 pandas
+poppler-utils  # for pdf2image on Linux
+AutoProcessor
